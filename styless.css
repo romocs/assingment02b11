@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
 
 
 
@@ -15,10 +21,6 @@
 
     background-image: url(assets/bg.png);
     background: linear-gradient(to top, rgba(231, 163, 37, 0.824), rgba(216, 201, 174, 0)), url(assets/bg.png)
-}
-*{
-    margin: 0px;
-    padding: 0px;
 }
 
 
@@ -139,44 +141,6 @@ nav {
     display: none;
 }
 
-@media screen and (max-width: 576px) {
-
-
-    .banner-hero {
-        flex-direction: column-reverse;
-    }
-
-    .banner-img {
-        width: 100%;
-        padding-left: 10px;
-    }
-
-    .banner-container {
-        padding: 15px;
-    }
-    .baglogo-head , .nav2 , .nav3{
-        display: none;
-    }
-    nav{
-        
-        border-bottom: 2px solid orange;
-        padding: 0;
-        margin: 0;
-        margin-top: 20px;
-    }
-    .hamburger{
-        display: block;
-    }
-    .hamburger .line{
-        width: 30px;
-        height:6px;
-        background: black;
-        margin: 6px 0px;
-        margin-right: 10px;
-        border-radius: 4px;
-    }
-
-}
 
 .curiculum-container {
 
@@ -357,7 +321,7 @@ nav {
     border: none;
     border-radius: 16px;
     position: absolute;
-    bottom: 100px;
+    bottom: 130px;
     cursor: pointer;
 
 }
@@ -370,7 +334,7 @@ nav {
     border: none;
     border-radius: 16px;
     position: absolute;
-    bottom: 100px;
+    bottom: 130px;
     cursor: pointer;
 }
 
@@ -382,7 +346,7 @@ nav {
     border: none;
     border-radius: 16px;
     position: absolute;
-    bottom: 100px;
+    bottom: 130px;
     cursor: pointer;
 }
 
@@ -394,7 +358,7 @@ nav {
     border: none;
     border-radius: 16px;
     position: absolute;
-    bottom: 100px;
+    bottom: 130px;
     cursor: pointer;
 }
 .btn-view{
@@ -411,6 +375,9 @@ nav {
 }
 .viewall{
     text-align: center;
+
+    max-width: 1440px;
+    margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 80px;
 }
@@ -419,34 +386,12 @@ nav {
     font-size: 2.5rem;
     font-weight: bold;
 }
-@media screen and (max-width:576px) {
-    .card-1{
-        display: none;
-    }
-
-    .card-2{
-        row-gap: 24px;
-        padding: 5px;
-    }
-    .btn-date2{
-        bottom: 70px;
-        
-    }
-    .btn-date3{
-        bottom: 70px;
-    }
-    .btn-date4{
-        bottom: 70px;
-    }
-    .btn-date5{
-        bottom: 70px;
-    }
 
 
-    
 
-    
-}
+
+
+
 
 
 
@@ -468,8 +413,9 @@ nav {
 
 .footer-bg{
     background-color: rgba(1, 172, 253, 1);
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    
 }
 
 .footer {
@@ -541,6 +487,28 @@ ul>li>a{
     margin-bottom: 30px;
     color: white;
 }
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+}
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+
+
+
+
+
+
 
 
 
@@ -572,6 +540,89 @@ ul>li>a{
         margin-left: 0px;
         padding: 20px;
     }
+   
+        .card-1{
+            display: none;
+        }
+    
+        .card-2{
+            row-gap: 24px;
+           margin: 0 auto;
+           padding: 10px;
+        }
+        .btn-date2{
+            bottom: 85px;
+            
+        }
+        .btn-date3{
+            bottom: 85px;
+        }
+        .btn-date4{
+            bottom: 85px;
+        }
+        .btn-date5{
+            bottom: 85px;
+        }
+        .curiculum-card{
+            
+            padding: 40px;
+            margin-left: 0px;
+        }
+        .banner-img{
+            max-width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .banner-hero {
+            flex-direction: column-reverse;
+        }
+    
+     
+        .banner-img img{
+            width: 95%;
+            object-fit: cover;
+            overflow: hidden;
+    
+        }
+    
+        .banner-container {
+            padding: 15px;
+           
+        }
+        .banner-title{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .banner-subtitle{
+            font-size: 14px;
+            text-align: center;
+        }
+        .baglogo-head , .nav2 , .nav3{
+            display: none;
+        }
+        nav{
+            
+            border-bottom: 2px solid orange;
+            padding: 0;
+            margin: 0;
+            margin-top: 20px;
+        }
+        .hamburger{
+            display: block;
+        }
+        .hamburger .line{
+            width: 30px;
+            height:6px;
+            background: black;
+            margin: 6px 0px;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+    
+        
+    
+        
+    }
 
-
-}
