@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+}
+
+/* background-image */
+.bg-image {
+
+
+    background-image: url(assets/bg.png);
+    background: linear-gradient(to top, rgba(231, 163, 37, 0.824), rgba(216, 201, 174, 0)), url(assets/bg.png)
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+/* shared colours */
+.orange {
+    color: orange;
+}
+
+.skyblue {
+    color: rgba(5, 212, 223, 1);
+}
+
+.violet {
+    color: rgba(93, 88, 239, 1);
+}
+
+.lightblue {
+    color: rgba(5, 212, 223, 1);
+}
+
+/* style for header */
+.navigation {
+    border: 1px solid black;
+
+
+
+}
+
+.enrol {
+    color: white;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 26px 140px; */
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 80px;
+
+
+
+}
+
+.nav1 {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav2>ul>li {
+    font-size: 18px;
+
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav2>ul {
+    display: flex;
+
+
+}
+
+.Contact {
+    color: white;
+    font-weight: 600;
+    padding: 10px 58px;
+    background-color: orange;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+}
+
+.school {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* banner style starts */
+.banner-hero {
+    /* max-width: 1440px;
+    margin: 0 auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner-container {}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-subtitle {
+    font-size: 20;
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 576px) {
+
+
+    .banner-hero {
+        flex-direction: column-reverse;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .banner-container {
+        padding: 15px;
+    }
+
+}
+
+.curiculum-container {
+
+    border-radius: 16px;
+    border: none;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 30px;
+
+
+}
+
+.curiculum-card {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+
+.curri-gradient-1 {
+    background: linear-gradient(to bottom, rgba(242, 186, 82, 0.883), white);
+    border: 1px solid orange;
+}
+
+.curri-gradient-2 {
+    background: linear-gradient(to bottom, rgba(166, 217, 237, 0.636), white);
+    border: 1px solid skyblue;
+}
+
+.curri-gradient-3 {
+    background: linear-gradient(to bottom, rgba(196, 108, 196, 0.335), white);
+    border: 1px solid violet;
+}
+
+.Standard-Curriculum {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+
+
+
+.nav-button {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+}
+
+.our-stories {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.story-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.card-box {
+    display: flex;
+    flex: 1;
+    gap: 24px;
+
+}
+
+.card-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.card-1 , .card-2i{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    position: relative;
+
+}
+
+ .card-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    position: relative;
+}
+
+.card-container {
+    background-color: white;
+    padding: 20px;
+    border: none;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+
+
+
+
+
+
+}
+
+.card-titleL {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-description1 {
+    font-weight: 500px;
+    font-size: 1rem;
+}
+
+.card-description {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-date1 {
+    padding: 10px 20px;
+    background-color: skyblue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 16px;
+   position: absolute;
+   bottom: 90px;
+   cursor: pointer;
+
+}
+
+.btn-date2 {
+    padding: 10px 20px;
+    background-color: violet;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 100px;
+    cursor: pointer;
+
+}
+
+.btn-date3 {
+    padding: 10px 20px;
+    background-color: aqua;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 100px;
+    cursor: pointer;
+}
+
+.btn-date4 {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 100px;
+    cursor: pointer;
+}
+
+.btn-date5 {
+    padding: 10px 20px;
+    background-color: rgb(35, 77, 35);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 100px;
+    cursor: pointer;
+}
+.btn-view{
+    color: white;
+    font-weight: bold;
+    padding: 10px 80px;
+    font-size: 1.25rem;
+    background-color: black;
+    border-radius: 16px;
+    cursor: pointer;
+    
+    
+
+}
+.viewall{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.kids-education{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-bg{
+    background-color: rgba(1, 172, 253, 1);
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.storycard1 img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 123px 174px;
+}
+
+.kidsedubag {
+    display: flex;
+    
+    align-items: center;
+    margin-bottom: 30px;
+}
+.kidsedu{
+    
+}
+.kids-edu-desc{
+    
+    max-width: 440px;
+    color: white;
+}
+.kiticons {
+    display: flex;
+    flex: 1;
+    gap: 5px;
+}
+
+.about-school{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+  ul,  li{
+  list-style: none;
+}
+
+ul>li>a{
+    text-decoration: none;
+    margin-top: 20px;
+}
+.about , li>a {
+    color: white;
+    font-size: 1.25rem;
+    font-weight:400px;
+    
+
+}
+.ulnav > li {
+    margin-top: 20px;
+    
+}
+.Keep{
+    font-size: 1.525rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* res for curriculum */
+@media screen and (max-width:576px) {
+    .curiculum-card {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .navigation-buttons {
+        display: none;
+    }
+
+    .storycard {
+        flex-direction: column;
+    }
+
+
+}
