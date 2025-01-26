@@ -134,6 +134,9 @@ nav {
     font-size: 20;
     margin-top: 0px;
 }
+.hamburger{
+    display: none;
+}
 
 @media screen and (max-width: 576px) {
 
@@ -144,10 +147,32 @@ nav {
 
     .banner-img {
         width: 100%;
+        padding-left: 10px;
     }
 
     .banner-container {
         padding: 15px;
+    }
+    .baglogo-head , .nav2 , .nav3{
+        display: none;
+    }
+    nav{
+        
+        border-bottom: 2px solid orange;
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger .line{
+        width: 30px;
+        height:6px;
+        background: black;
+        margin: 6px 0px;
+        margin-right: 10px;
+        border-radius: 4px;
     }
 
 }
@@ -250,7 +275,7 @@ nav {
 .card-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 20px;
 }
 .card-1 , .card-2i{
     display: flex;
@@ -258,6 +283,10 @@ nav {
     gap: 0px;
     position: relative;
 
+}
+.card-2i{
+    
+    margin-top: 80px;
 }
 
  .card-image {
@@ -291,11 +320,20 @@ nav {
 .card-description1 {
     font-weight: 500px;
     font-size: 1rem;
+    
 }
 
 .card-description {
     font-size: 1rem;
     font-weight: bold;
+    margin-top: 5px;
+    width: 100%;
+   
+    
+
+}
+.card-description3{
+    padding: 10px;
 }
 
 .btn-date1 {
@@ -381,7 +419,25 @@ nav {
     font-size: 2.5rem;
     font-weight: bold;
 }
+@media screen and (max-width:576px) {
+    .card-1{
+        display: none;
+    }
 
+    .card-2{
+        row-gap: 24px;
+        padding: 5px;
+    }
+    .btn-date2{
+        bottom: 70px;
+        
+    }
+    .btn-date3{
+        bottom: 70px;
+    }
+
+    
+}
 
 
 
@@ -500,6 +556,12 @@ ul>li>a{
 
     .storycard {
         flex-direction: column;
+    }
+
+    .footer{
+        flex-direction: column;
+        margin-left: 0px;
+        padding: 20px;
     }
 
 
