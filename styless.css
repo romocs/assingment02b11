@@ -58,6 +58,7 @@
     border: none;
     font-size: 18px;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 header {
@@ -269,6 +270,8 @@ nav {
     display: flex;
     flex: 1;
     gap: 24px;
+    margin-top: 80px;
+    
 
 }
 
@@ -284,10 +287,7 @@ nav {
     position: relative;
 
 }
-.card-2i{
-    
-    margin-top: 80px;
-}
+
 
  .card-image {
     width: 100%;
@@ -435,6 +435,15 @@ nav {
     .btn-date3{
         bottom: 70px;
     }
+    .btn-date4{
+        bottom: 70px;
+    }
+    .btn-date5{
+        bottom: 70px;
+    }
+
+
+    
 
     
 }
